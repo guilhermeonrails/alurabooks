@@ -1,0 +1,218 @@
+:root {
+    --fonte-principal: 'Poppins';
+    --branco-principal: #FFFFFF;
+    --azul-gradiente: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --amarelo-titulo: #EB9B00;
+    --cor-de-fundo: #EBECEE;
+    --azul-escuro: #002F52;
+    --cinza-texto: rgba(0, 0, 0, 0.54);
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+
+    background-color: var(--cor-de-fundo);
+}
+
+* {
+    margin: 0;
+padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+    text-align:center;
+}
+
+.header__container img {
+    margin-right: 1em;
+}
+
+.header__container {
+    display: flex;
+    align-items: center; /* align vertical */
+}
+
+.banner {
+    text-align: center;
+    background: var(--azul-gradiente);
+    color: var(--branco-principal);
+    padding: 2em;
+}
+
+.banner__titulo {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.banner__descricao {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 1em 0 2em 0;
+}
+
+.banner__pesquisa {
+    padding: 1em;
+    border-radius: 24px;
+    width: 90%;
+    background-color: transparent;
+    border: 1px solid var(--branco-principal);
+    background: url("img/Pesquisa.png") left no-repeat;
+}
+
+.container {
+    text-align: center;
+}
+
+.container__titulo {
+    background-color: var(--branco-principal);
+    font-family: 18px;
+    line-height: 27px;
+    color: var(--amarelo-titulo);
+    padding: 0.5em 0 0.3em 0;
+    text-transform: uppercase;
+}
+
+.container__sobre {
+    background-color: var(--branco-principal);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+margin: 2em 1em;
+text-align: left;
+padding: 1em;
+}
+
+.sobre__titulo {
+    color: var(--amarelo-titulo);
+font-size: 14px;
+line-height: 24px;
+font-weight: 700;
+}
+
+.sobre__livro {
+    margin: 0.3em 0;
+    color: var(--azul-escuro);
+    font-size: 18px;
+line-height: 27px;
+font-weight: 700;
+}
+
+.sobre__valores {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.sobre__opcoes {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.opcoes__botao {
+    text-decoration: none;
+    background-color: var(--amarelo-titulo);
+    color: var(--branco-principal);
+    padding: 1em 3em;
+}
+
+.valores__texto {
+    font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: var(--cinza-texto);
+margin-right: 0.2em;
+}
+
+.valores__valor {
+    font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: var(--azul-escuro);
+}
+
+.topicos {
+    text-align: center;
+    background-color: var(--branco-principal);
+    padding: 1em 0;
+}
+
+.topicos__container {
+    background: var(--azul-gradiente);
+    padding: 1em 0;
+}
+
+.topicos__titulo {
+    color: var(--branco-principal);
+    font-weight: 300;
+    font-style: normal;
+font-size: 16px;
+line-height: 24px;
+margin: 1em 0;
+}
+
+.topicos__lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lista__item {
+    margin: 1.4em 1em;
+}
+
+.item__botao {
+    text-decoration: none;
+    background-color: var(--amarelo-titulo);
+    color: var(--branco-principal);
+    padding: 1em 1em;
+}
+
+.contato {
+    background: var(--branco-principal);
+    padding: 1em 2em;
+}
+
+
+.contato__titulo {
+    background: var(--azul-gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.contato__texto {
+    font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+background: var(--azul-gradiente);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+margin: 1em 0;
+}
+
+.contato__email {
+    padding: 1em;
+    border-radius: 24px;
+    width: 90%;
+    background-color: transparent;
+    color: var(--azul-escuro);
+    border: 1px solid var(--azul-escuro);
+    background: url("img/email.png") left no-repeat;
+}
+
+.rodape {
+    background-color: var(--branco-principal);
+    padding: 2em;
+}
